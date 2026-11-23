@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Clip Poster Privacy Policy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap">
+<style>*{box-sizing:border-box}body{margin:0}</style>
+<style>
+/* Layout: one readable column, two policy documents stacked, sticky in-page switcher */
+:root {
+  --bg: #f7f6f9;
+  --surface: #ffffff;
+  --fg: #1b1a22;
+  --muted: #5d5a6b;
+  --line: #e3e0ea;
+  --accent: #e0244f;
+  --display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --body: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #131219; --surface: #1c1b24; --fg: #ecebf2; --muted: #a8a5b8; --line: #2e2c3a; --accent: #ff5a7e;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #131219; --surface: #1c1b24; --fg: #ecebf2; --muted: #a8a5b8; --line: #2e2c3a; --accent: #ff5a7e;
+  color-scheme: dark;
+}
+body {
+  background: var(--bg); color: var(--fg); font-family: var(--body);
+  font-size: 16px; line-height: 1.65;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 64px;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.wrap { max-width: 42rem; margin: 0 auto; }
+header { padding-block: 48px 24px; }
+.app { display: flex; align-items: center; gap: 12px; font-family: var(--display); font-weight: 700; font-size: 1.1rem; }
+.mark { width: 36px; height: 36px; border-radius: 10px; background: var(--accent); color: #fff; display: grid; place-items: center; font-size: 0.8rem; letter-spacing: 0.04em; }
+header p { color: var(--muted); margin: 12px 0 0; }
+nav { position: sticky; top: env(safe-area-inset-top, 0px); background: var(--bg); border-bottom: 1px solid var(--line); display: flex; gap: 8px; padding-block: 10px; z-index: 5; }
+nav a { color: var(--fg); text-decoration: none; font-weight: 600; font-size: 0.9rem; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); }
+nav a:hover, nav a:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
+section { padding-block: 32px 8px; scroll-margin-top: calc(env(safe-area-inset-top, 0px) + 64px); }
+h1 { font-family: var(--display); font-size: 2rem; line-height: 1.2; margin: 0 0 4px; text-wrap: balance; }
+.updated { color: var(--muted); font-size: 0.85rem; letter-spacing: 0.03em; text-transform: uppercase; margin: 0 0 20px; }
+h2 { font-family: var(--display); font-size: 1.15rem; margin: 28px 0 6px; }
+p, li { max-width: 65ch; }
+ul { padding-left: 1.2rem; }
+li + li { margin-top: 4px; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0 0; }
+a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+    <div class="app"><span class="mark">CLIP</span>Clip Poster</div>
+    <p>Clip Poster is a personal tool that runs on its owner's own computer. It records livestream highlights, adds captions, and posts them to the owner's own TikTok and Instagram accounts after the owner approves each one.</p>
+  </header>
+<nav aria-label="Policies"><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></nav>
+<section id="privacy">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated November 24, 2026</p>
+
+    <h2>Who this covers</h2>
+    <p>Clip Poster has one user: its owner. It does not have customers, does not let other people log in, and does not collect information about viewers, streamers, or followers.</p>
+
+    <h2>What Clip Poster stores</h2>
+    <ul>
+      <li><strong>Login tokens</strong> from TikTok and Instagram, so it can post to the owner's accounts. They are saved in a file on the owner's own computer.</li>
+      <li><strong>Basic account info</strong> TikTok or Instagram returns when connecting, such as the account's user ID and username, to know where to post.</li>
+      <li><strong>Video clips and their captions</strong>, kept on the owner's computer until they are posted, then deleted.</li>
+    </ul>
+
+    <h2>What it sends and to whom</h2>
+    <p>Clip Poster sends videos and captions only to TikTok and Instagram, through their official APIs, to publish them on the owner's accounts. It can also send a notification to the owner's own Discord channel when a clip is ready. It does not sell, share, or send data to anyone else, and it does not use analytics or advertising tools.</p>
+
+    <h2>How long data is kept</h2>
+    <p>Clips are deleted after they are posted. Login tokens are kept until the owner disconnects the account or deletes the program's files.</p>
+
+    <h2>Removing access</h2>
+    <p>The owner can revoke Clip Poster's access at any time: in TikTok under Settings and privacy, Security, Apps and services, and in Instagram under Settings, Apps and websites. Deleting the program's folder removes everything it stored.</p>
+
+    <h2>Changes</h2>
+    <p>This policy may be updated. The date at the top shows the latest version.</p>
+  </section>
+</div>
+</body>
+</html>
